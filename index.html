@@ -10,5 +10,33 @@
 </head>
 <body>
     
+    <input type="text" id="password" readonly="readonly">
+    <div id="password-specs">
+        
+        <label for="length">Character Length</label>
+        <input type="range" id="length" min="4" max="16">
+
+        <div id="lowercase-div" class="include-div">
+        <input type="checkbox" id="lowercase">
+        <label for="lowercase">Include Lowercase Letters</label>
+        </div>
+
+        <div id="uppercase-div" class="include-div">
+        <input type="checkbox" id="uppercase">
+        <label for="uppercase">Include Uppercase Letters</label>
+        </div>
+        <div id="lowercase-div" class="include-div">
+        <input type="checkbox" id="numbers">
+        <label for="numbers">Include Numbers</label>
+        </div>
+        <div id="lowercase-div" class="include-div">
+        <input type="checkbox" id="symbols">
+        <label for="symbols">Include Symbols</label>
+        </div>
+        <section>strength</section>
+        <input type="button" value="Generate ->" id="generator">
+    </div>
+
+
 </body>
 </html>
