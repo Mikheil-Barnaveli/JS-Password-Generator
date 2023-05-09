@@ -9,32 +9,47 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    
+    <h1 id="password-generator">Password Generator</h1>
+    <div id="password-div">
     <input type="text" id="password" readonly="readonly">
+    <button id="copybutton">@</button>
+    </div>
     <div id="password-specs">
         
+        <div id="length">
         <label for="length">Character Length</label>
-        <input type="range" id="length" min="4" max="16">
+        <p id="length-number"></p>
+        </div>
+        <input type="range" id="length-range" min="4" max="16">
 
         <div id="lowercase-div" class="include-div">
         <input type="checkbox" id="lowercase">
-        <label for="lowercase">Include Lowercase Letters</label>
+        <label for="lowercase" class="checkbox">Include Lowercase Letters</label>
         </div>
 
         <div id="uppercase-div" class="include-div">
         <input type="checkbox" id="uppercase">
-        <label for="uppercase">Include Uppercase Letters</label>
+        <label for="uppercase" class="checkbox">Include Uppercase Letters</label>
         </div>
         <div id="lowercase-div" class="include-div">
         <input type="checkbox" id="numbers">
-        <label for="numbers">Include Numbers</label>
+        <label for="numbers" class="checkbox">Include Numbers</label>
         </div>
         <div id="lowercase-div" class="include-div">
         <input type="checkbox" id="symbols">
-        <label for="symbols">Include Symbols</label>
+        <label for="symbols" class="checkbox">Include Symbols</label>
         </div>
-        <section>strength</section>
-        <input type="button" value="Generate ->" id="generator">
+        <section>
+            <h1 id="strength-h1">Strength</h1>
+            <div id="strength-div">
+            <h1 id="strength-level">WEAK</h1>
+            <div id="strength1" class="strength"></div>
+            <div id="strength2" class="strength"></div>
+            <div id="strength3" class="strength"></div>
+            <div id="strength4" class="strength"></div>
+            </div>
+        </section>
+        <input type="button" value="Generate >>>" id="generator">
     </div>
 
 
